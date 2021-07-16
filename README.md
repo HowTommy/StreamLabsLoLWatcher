@@ -15,6 +15,7 @@ The release of the v0.1 is here : [Release v0.1](https://github.com/HowTommy/Str
 Few notes :
 * It works only when StreamLabs is up
 * Only CTRL key modifier seems to work
+* There is an icon in your taskbar when you launch the app (so that you can display it back to close it or change settings)
 * The focus is automatically set on the popup, you just have to type your shortcut to make it disappear
 * There is a 5 seconds timer refresh for the check of the window
 * If streamlabs is not launched, it only checks every 1 min if you launch it
