@@ -80,7 +80,7 @@ namespace StreamLabsWatcher
         {
             this.comboBox1.Items.Clear();
             Process[] processCollection = Process.GetProcesses();
-            foreach (Process p in processCollection)
+            foreach (Process p in processCollection.Where((p) => p.ProcessName.Contains("Leag") || p.ProcessName.Contains("Riot")))
             {
                 this.comboBox1.Items.Add(p.ProcessName);
             }
@@ -228,7 +228,7 @@ namespace StreamLabsWatcher
         {
             this.isRunning = false;
             this.timer1.Stop();
-            this.button1.Text = this.isRunning ? "Désactiver" : "Activer";
+            this.button1.Text = this.isRunning ? "Stop" : "Start";
 
             this.listBox1.Enabled = true;
             this.listBox2.Enabled = true;
@@ -243,7 +243,7 @@ namespace StreamLabsWatcher
             this.isRunning = true;
             this.isProcessPresentNow = this.checkIfProcessPresentNow();
             this.timer1.Start();
-            this.button1.Text = this.isRunning ? "Désactiver" : "Activer";
+            this.button1.Text = this.isRunning ? "Stop" : "Start";
 
             this.listBox1.Enabled = false;
             this.listBox2.Enabled = false;
@@ -271,12 +271,14 @@ namespace StreamLabsWatcher
 
                 if (this.isProcessPresentNow && !this.checkIfProcessPresentNow())
                 {
+                    Console.WriteLine("The process disappeared");
                     this.isProcessPresentNow = false;
                     var newForm = new FormModal(modKey2, key2, Color.FromArgb(255, 0, 0));
                     newForm.ShowDialog();
                 }
                 else if (!this.isProcessPresentNow && this.checkIfProcessPresentNow())
                 {
+                    Console.WriteLine("The process appeared");
                     this.isProcessPresentNow = true;
                     var newForm = new FormModal(modKey1, key1, Color.FromArgb(0, 255, 0));
                     newForm.ShowDialog();

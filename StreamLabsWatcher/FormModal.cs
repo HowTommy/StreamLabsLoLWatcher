@@ -71,6 +71,13 @@ namespace StreamLabsWatcher
         {
             this.BackColor = this.color;
             this.label1.Text = "PRESS > " + this.modKey + " + " + this.key;
+            this.FocusField();
+        }
+
+        private async void FocusField()
+        {
+            await Task.Delay(50);
+            this.richTextBox1.Focus();
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -58,7 +58,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 40);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Activer";
+            this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -75,9 +75,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(35, 123);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 17);
+            this.label1.Size = new System.Drawing.Size(118, 17);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Processus à détecter";
+            this.label1.Text = "Process to detect";
             // 
             // timer1
             // 
@@ -90,7 +90,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(109, 40);
             this.button2.TabIndex = 3;
-            this.button2.Text = "Choisir";
+            this.button2.Text = "Chose";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -109,9 +109,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(35, 262);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(318, 17);
+            this.label3.Size = new System.Drawing.Size(288, 17);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Commande à lancer quand le processus apparait";
+            this.label3.Text = "Command to ask when the process appears:";
             // 
             // listBox1
             // 
@@ -160,9 +160,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(35, 374);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(320, 17);
+            this.label4.Size = new System.Drawing.Size(306, 17);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Commande à lancer quand le processus disparait";
+            this.label4.Text = "Command to ask when the process disappears:";
             // 
             // button3
             // 
@@ -170,7 +170,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(138, 31);
             this.button3.TabIndex = 11;
-            this.button3.Text = "Détecter touche";
+            this.button3.Text = "Detect key";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -180,7 +180,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(138, 31);
             this.button4.TabIndex = 12;
-            this.button4.Text = "Détecter touche";
+            this.button4.Text = "Detect key";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -201,7 +201,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(224, 40);
             this.button6.TabIndex = 14;
-            this.button6.Text = "Sauver les réglages";
+            this.button6.Text = "Save settings (autostart)";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -212,7 +212,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(128, 40);
             this.button7.TabIndex = 15;
-            this.button7.Text = "Effacer réglages";
+            this.button7.Text = "Erase settings";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -229,7 +229,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(73, 40);
             this.button8.TabIndex = 16;
-            this.button8.Text = "Masquer";
+            this.button8.Text = "Hide";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
